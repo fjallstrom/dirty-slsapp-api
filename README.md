@@ -6,12 +6,12 @@ no license, just use at your own risk.
 
 note: this is not in any way endorsed or supported by springloops inc.
 
-usage as standalone php class:
-$slsapp = new Slsapp;
+usage as standalone php class:  
+$slsapp = new Slsapp;  
 $response = $slsapp->get_milestones();
 
-usage from codeigniter:
-$this->load->library('slsapp');
+usage from codeigniter:  
+$this->load->library('slsapp');  
 this->slsapp->get_milestones();
 
 known issues:
