@@ -8,12 +8,12 @@ note: this is not in any way endorsed or supported by springloops inc.
 
 usage as standalone php class:  
 $slsapp = new Slsapp;  
-$milestones = $slsapp->get_milestones();
+$milestones = $slsapp->get_milestones();  
 $tickets = $slsapp->get_tickets();
 
 usage from codeigniter:  
 $this->load->library('slsapp');  
-$milestones = $this->slsapp->get_milestones();
+$milestones = $this->slsapp->get_milestones();  
 $tickets = $this->slsapp->get_tickets();
 
 known issues:
