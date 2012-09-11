@@ -120,7 +120,7 @@ class Slsapp {
 	public function get_tickets($project_id = null, $milestone_id = null){
 		$method = 'tickets/5051?format=json';
 		$ticket = array();
-		$ttl = 18000;
+		$ttl = 180;
 		if($response = $this->_request($this::$base_url.$method, $ttl)){
 			if($response = @json_decode($response)){
 				foreach($response->tickets as $item){
