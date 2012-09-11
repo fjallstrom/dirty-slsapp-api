@@ -8,13 +8,15 @@ note: this is not in any way endorsed or supported by springloops inc.
 
 usage as standalone php class:  
 $slsapp = new Slsapp;  
-$response = $slsapp->get_milestones();
+$milestones = $slsapp->get_milestones();
+$tickets = $slsapp->get_tickets();
 
 usage from codeigniter:  
 $this->load->library('slsapp');  
-this->slsapp->get_milestones();
+$milestones = this->slsapp->get_milestones();
+$tickets = this->slsapp->get_tickets();
 
 known issues:
 - class does not report back if a milestone is late, upcoming or done.
-- cannot yet get tickets by project id, but should be straight forward to implement if needed.
 - error handling when login fails is... not excellent.
+- to use get_tickets, you may need to change 5051 to the integer in the location field of your browser when visiting the your tickets page in slsapp
