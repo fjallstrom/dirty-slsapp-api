@@ -13,8 +13,8 @@ $tickets = $slsapp->get_tickets();
 
 usage from codeigniter:  
 $this->load->library('slsapp');  
-$milestones = this->slsapp->get_milestones();
-$tickets = this->slsapp->get_tickets();
+$milestones = $this->slsapp->get_milestones();
+$tickets = $this->slsapp->get_tickets();
 
 known issues:
 - class does not report back if a milestone is late, upcoming or done.
