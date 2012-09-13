@@ -6,6 +6,10 @@ no license, just use at your own risk.
 
 note: this is not in any way endorsed or supported by springloops inc.
 
+read moar hear:  
+http://earthpeople.se/labs/2012/09/springloops-php-library/  
+
+
 usage as standalone php class:  
 $slsapp = new Slsapp;  
 $milestones = $slsapp->get_milestones();  
